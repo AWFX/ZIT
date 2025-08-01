@@ -1,0 +1,12 @@
+# Определение стейджов для пайплайна.
+stages:
+  - test
+
+# Джоба для проверки наличия nginx.
+check_nginx:
+  stage: test  
+
+  # Выполняемые команды.
+  script:
+    - which nginx && nginx -v
+
