@@ -1,3 +1,13 @@
+## Сборка и запуск Dockerfile
+```bash
+docker build -t custom_nginx .
+docker run \
+-- name "custom_nginx" \
+-p 80:80 \
+--rm \
+-d custom_nginx
+```
+
 ## Ответы на вопросы:
 ### Чем отличается apt update от apt upgrade?
 - Команда update - обновляет информацию о доступных пакетах в репозиториях, а команда upgrade обновляет пакеты, которые есть в системе.
